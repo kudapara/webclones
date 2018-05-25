@@ -1,6 +1,6 @@
-# coinbase-clone-tailwindcss
+# webclones
 
-> A clone of the coinbase website using tailwind.css
+> A respository with clones of some popular websites
 
 ## Build Setup
 
