@@ -1,6 +1,6 @@
 # webclones
 
-> A respository with clones of some popular websites
+> I am learning a lot of css, these days. So I have this repository with clones of popular websites, to teach me layout, design and typography.
 
 ## Build Setup
 
