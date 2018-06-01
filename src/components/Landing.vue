@@ -7,14 +7,14 @@
       </div>
     </div>
 
-    <div class="px-6 flex flex-wrap justify-start">
+    <div class="px-6 flex flex-wrap justify-start sm:justify-center">
 
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4" v-for="(clone, i) in clones" :key="i">
         <div class="mb-4 mr-4 bg-white rounded shadow">
           <div :style="{ 'background-image': `${clone.imageUrl}` }" class="h-48 bg-cover border-b-2" :class="{[`border-${clone.themeColor}`]: true, [`bg-${clone.themeColor}-lighter`]: true}"></div>
-          <div class="p-6 flex items-center justify-between">
-            <a class="text-grey-darkest no-underline" :href="clone.originalUrl">{{ clone.name }}</a>
-            <button  @click="$router.push(clone.cloneUrl)" :class="{ [`bg-${clone.themeColor}-dark`]: true, [`hover:bg-${clone.themeColor}`]: true }" class="inline-flex items-center shadow rounded-sm text-white py-2 px-4">Checkout <i class="material-icons ml-2">arrow_forward</i></button>
+          <div class="p-6 flex flex-wrap items-center justify-between">
+            <a class="text-grey-darkest no-underline mb-2 mr-2" :href="clone.originalUrl">{{ clone.name }}</a>
+            <button  @click="$router.push(clone.cloneUrl)" :class="{ [`bg-${clone.themeColor}-dark`]: true, [`hover:bg-${clone.themeColor}`]: true }" class="inline-flex items-center shadow rounded-sm  text-white py-2 px-4">Checkout <i class="material-icons ml-2">arrow_forward</i></button>
           </div>
         </div>
       </div>      
